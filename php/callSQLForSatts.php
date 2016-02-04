@@ -5,9 +5,9 @@ header("Content-Type: application/json; charset=UTF-8");
 
 //Setup variables 
 $servername = "localhost";
-$username = "thepenin_indyemp";
-$password = "lRgieoceG69l";
-$dbname = "thepenin_indyempire";
+$username = "username";
+$password = "password";
+$dbname = "dbname";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
