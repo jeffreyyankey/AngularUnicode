@@ -15,9 +15,7 @@ app.controller('sattsCtrl', function($scope, $http)
    	$scope.show = false;
 	
 	$scope.languageChange = function ()
-	{
-		$scope.names = null;
-		
+	{	
 		$scope.currentLanguage = repeatSelect.options[repeatSelect.selectedIndex].text;
 		$http.get('php/callFor' + repeatSelect.options[repeatSelect.selectedIndex].text + 'Satts.php')
   		.then(function (response) 
