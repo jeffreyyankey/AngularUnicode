@@ -5,9 +5,9 @@ header("Content-Type: application/json; charset=UTF-8");
 
 //Setup variables 
 $servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "dbname";
+$username = "thepenin_indyemp";
+$password = "lRgieoceG69l";
+$dbname = "thepenin_indyempire";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -18,7 +18,7 @@ if ($conn->connect_error)
     die("Connection failed: " . $conn->connect_error);
 }
 
-$result = $conn->query("SELECT Ascii, Decicode, Hexcode FROM ArabicSatts");
+$result = $conn->query("SELECT Ascii, Decicode, Hexcode FROM RussianSatts");
 
 $output = "";
 while($rs = $result->fetch_array(MYSQLI_ASSOC)) {
